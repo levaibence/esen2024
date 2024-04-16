@@ -1,1 +1,16 @@
 1712645856541:help
+1713252201282:create book
+1713252239139:create book --publisher = "shdfsdfhkjdhf" --author = "jhsdfsdkghdklfhsdkf" --price = "999999.99" --title = "joijhf"
+1713252256492:--publisher "shdfsdfhkjdhf" --author "jhsdfsdkghdklfhsdkf" --price "999999.99" --title "joijhf"
+1713252262588:shell:>--publisher "shdfsdfhkjdhf" --author "jhsdfsdkghdklfhsdkf" --price "999999.99" --title "joijhf"
+1713252267544:create book shell:>--publisher "shdfsdfhkjdhf" --author "jhsdfsdkghdklfhsdkf" --price "999999.99" --title "joijhf"
+1713252380632:create book --title jgjdfklgh --author fajfkdsj --price 99999 -puclisher rizzohio
+1713252399088:create book --title jgjdfklgh --author fajfkdsj --price 99999 -puclisher qqqqqq
+1713252456537:create book --title jgjdfklgh --author fajfkdsj --price 99999 -puclisher rizzohio
+1713252462904:create book --title jgjdfklgh --author fajfkdsj --price 99999 -publisher rizzohio
+1713252499421:create book --title jgjdfklgh --author fajfkdsj --price 99999 --publisher rizzohio
+1713252828271:list books
+1713252883506:create book --title jgjdfklgh --author fajfkdsj --price 99999 -puclisher rizzohio
+1713252885459:create book --title jgjdfklgh --author fajfkdsj --price 99999 -puclisher rizzohigfdjhkdféjg
+1713252889580:list books
+1713252903025:create book --title jgjdfklgh --author fajfkdsj --price 99999 -publisher rizzohio
