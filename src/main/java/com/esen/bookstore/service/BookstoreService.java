@@ -63,4 +63,19 @@ public class BookstoreService {
         var bookstore = bookstoreRepository.findById(id).orElseThrow(() -> new RuntimeException("no such bookstore"));
         return bookstore.getInventory();
     }
+
+    public void changeStock(Long bookstoreId, Long bookId, Integer amount) {
+        var bookstore = bookstoreRepository.findById(bookstoreId).orElseThrow(() -> new RuntimeException("no such bookstore"));
+        var book = bookRepository.findById(bookId).orElseThrow(() -> new RuntimeException("no such book"));
+        if (bookstore.getInventory().containsKey(book)) {
+            var entry = bookstore.getInventory().get(book);
+            if (entry + amount < 0) throw new UnsupportedOperationException("Invalid amount, book count would become negative");
+            else bookstore.getInventory().replace(book, entry + amount);
+        }
+        else {
+            if (amount < 0) throw new UnsupportedOperationException("Cannot add new book with a negative amount of copies");
+            bookstore.getInventory().put(book, amount);
+        }
+        bookstoreRepository.save(bookstore);
+    }
 }
