@@ -15,3 +15,9 @@
 1713252889580:list books
 1713252903025:create book --title jgjdfklgh --author fajfkdsj --price 99999 -publisher rizzohio
 1714458271863:help
+1714460463865:find prices 5
+1714460486417:find prices 1
+1714461256875:help
+1714461264667:list bookstores
+1714461269003:get stock 1
+1714461272828:get stock 2
