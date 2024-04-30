@@ -78,7 +78,7 @@ public class BookstoreHandler {
         bookstoreService.changeStock(bookstoreId, bookId, amount);
     }
 
-    @ShellMethod(key = "add stock", value = "add stock")
+    @ShellMethod(key = "sell stock", value = "sell stock")
     public void sellStock(Long bookstoreId, Long bookId, Integer amount) {
         bookstoreService.changeStock(bookstoreId, bookId, amount * -1);
     }
