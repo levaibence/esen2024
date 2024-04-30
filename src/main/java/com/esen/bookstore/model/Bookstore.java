@@ -15,14 +15,15 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Bookstore {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(unique = true)
     private String location;
-    private double priceModifier;
-    private double cashOnHand;
+    private Double priceModifier;
+    private Double moneyInCashRegister;
 
     @ElementCollection(fetch = FetchType.EAGER)
     @JsonIgnore
